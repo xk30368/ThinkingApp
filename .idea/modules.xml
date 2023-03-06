@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ThinkingApp.iml" filepath="$PROJECT_DIR$/ThinkingApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ThinkingApp.iml" filepath="$PROJECT_DIR$/.idea/ThinkingApp.iml" />
     </modules>
   </component>
 </project>
