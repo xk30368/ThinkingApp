@@ -1,9 +1,8 @@
 import { defineConfig } from "umi";
+import routes from './src/routes';
 
 export default defineConfig({
-  routes: [
-    { path: "/", component: "index" },
-  ],
+  routes,
   npmClient: 'pnpm',
   // 别名映射
   alias: {

@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Outlet } from 'umi';
-import { Layout, ConfigProvider, theme } from 'antd';
+import { Layout, ConfigProvider } from 'antd';
+import Nav from './nav';
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 
 const Layouts: React.FC = () => (
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let header = document.querySelector("header");
+      header?.classList.toggle("sticky", window.scrollY > 0);
+    })
+  }),
+
   <ConfigProvider
     theme={{
       /*
@@ -13,20 +21,19 @@ const Layouts: React.FC = () => (
       * 暗色算法 theme.darkAlgorithm
       * 紧凑算法 theme.compactAlgorithm
       * */
-      algorithm: theme.defaultAlgorithm,
+      // algorithm: theme.defaultAlgorithm,
+      token: {
+        colorPrimary: '#2775b6',
+      },
     }}
   >
-    <Layout className="ysj_layout">
-      <Header>
-        <div className="logo" />
-        <div>11</div>
-      </Header>
+    <Layout className="ysj-layout">
+      <Nav />
       <Content>
         <Outlet />
       </Content>
-      <Footer>
-        Ysj个人网站
-      </Footer>
+      {/*<Footer>*/}
+      {/*</Footer>*/}
     </Layout>
   </ConfigProvider>
 )

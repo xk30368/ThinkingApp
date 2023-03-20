@@ -1,0 +1,56 @@
+@import "../index.less";
+
+/* YSJ 菜单header样式 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 120px !important;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0) !important;
+  a.ysj-logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+  ul.ysj-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      position: relative;
+      list-style: none;
+      a {
+        position: relative;
+        text-decoration: none;
+        margin: 0 15px;
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: 500;
+        transition: 0.6s;
+      }
+    }
+  }
+}
+header.sticky {
+  padding: 10px 140px!important;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 1) !important;
+  .ysj-logo {
+    color: @mainColor;
+  }
+  ul li a{
+    color: @mainColor;
+  }
+}

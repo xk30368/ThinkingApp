@@ -1,0 +1,59 @@
+/*
+* Css通用样式
+* 主题色调
+* #2775b6
+* #3c87be
+* #5499c4
+* #6eabca
+* #8abcd1
+***********
+* 背景色调
+* 渐变start:
+* 渐变end:
+*/
+
+/* 自定义主题变量色 */
+@mainColor: #2775b6; // 景泰蓝
+@mainLightColor: #8abcd1; // 秋波蓝
+.mainColor {
+  color: #2775b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.ysj-layout {
+  width: 100%;
+  min-height: 200vh;
+  //background-image: linear-gradient(to right top, #4481eb, #557fef, #647df2, #747bf4, #8378f6, #7b7ffa, #7486fd, #6d8cff, #4d9bff, #2aa8ff, #00b4ff, #04befe);
+  //background-image: linear-gradient(118deg, rgba(236, 241, 244,1) 2%,rgba(227, 241, 250,1) 52%);
+  background-image: linear-gradient(to left top, #2775b6, #3c87be, #5499c4, #6eabca, #8abcd1);
+}
+
+.ysj-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #6eabca;
+}
