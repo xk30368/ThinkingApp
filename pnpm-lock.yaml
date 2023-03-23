@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ant-design/icons': ^5.0.1
   '@types/react': ^18.0.0
   '@types/react-dom': ^18.0.0
   '@umijs/lint': ^4.0.57
@@ -13,6 +14,7 @@ specifiers:
   umi: ^4.0.55
 
 dependencies:
+  '@ant-design/icons': 5.0.1
   antd: 5.3.0
   umi: registry.npmjs.org/umi/4.0.55_hjnhg35i3sjgdbh5e6y4jgnhni
 
@@ -5910,7 +5912,7 @@ packages:
     version: 7.21.0
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.11
+      regenerator-runtime: 0.13.11
     dev: false
 
   registry.npmjs.org/@babel/template/7.20.7:
@@ -6477,9 +6479,9 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
       hoist-non-react-statics: registry.npmjs.org/hoist-non-react-statics/3.3.2
-      react-is: registry.npmjs.org/react-is/16.13.1
+      react-is: 16.13.1
     dev: false
 
   registry.npmjs.org/@loadable/component/5.15.2_react@18.1.0:
@@ -6491,10 +6493,10 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
       hoist-non-react-statics: registry.npmjs.org/hoist-non-react-statics/3.3.2
       react: registry.npmjs.org/react/18.1.0
-      react-is: registry.npmjs.org/react-is/16.13.1
+      react-is: 16.13.1
     dev: false
 
   registry.npmjs.org/@nicolo-ribaudo/eslint-scope-5-internals/5.1.1-v1:
@@ -7163,7 +7165,7 @@ packages:
     name: '@umijs/babel-preset-umi'
     version: 4.0.55
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
       '@bloomberg/record-tuple-polyfill': registry.npmjs.org/@bloomberg/record-tuple-polyfill/0.0.4
       '@umijs/bundler-utils': registry.npmjs.org/@umijs/bundler-utils/4.0.55
       '@umijs/utils': registry.npmjs.org/@umijs/utils/4.0.55
@@ -7359,7 +7361,7 @@ packages:
       react-dom: registry.npmjs.org/react-dom/18.1.0_react@18.1.0
       react-router: registry.npmjs.org/react-router/6.3.0_react@18.1.0
       react-router-dom: registry.npmjs.org/react-router-dom/6.3.0_ef5jwxihqo6n7gxfmzogljlgcm
-      regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.11
+      regenerator-runtime: 0.13.11
     transitivePeerDependencies:
       - '@types/node'
       - '@types/react'
@@ -7390,7 +7392,7 @@ packages:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
       '@loadable/component': registry.npmjs.org/@loadable/component/5.15.2
       history: registry.npmjs.org/history/5.3.0
       react-helmet-async: registry.npmjs.org/react-helmet-async/1.3.0
@@ -7406,7 +7408,7 @@ packages:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
       '@loadable/component': registry.npmjs.org/@loadable/component/5.15.2_react@18.1.0
       history: registry.npmjs.org/history/5.3.0
       react: registry.npmjs.org/react/18.1.0
@@ -9389,7 +9391,7 @@ packages:
     name: history
     version: 5.3.0
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
     dev: false
 
   registry.npmjs.org/hmac-drbg/1.0.1:
@@ -11832,7 +11834,7 @@ packages:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
       invariant: registry.npmjs.org/invariant/2.2.4
       prop-types: registry.npmjs.org/prop-types/15.8.1
       react-fast-compare: registry.npmjs.org/react-fast-compare/3.2.0
@@ -11848,19 +11850,13 @@ packages:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
+      '@babel/runtime': 7.21.0
       invariant: registry.npmjs.org/invariant/2.2.4
       prop-types: registry.npmjs.org/prop-types/15.8.1
       react: registry.npmjs.org/react/18.1.0
       react-dom: registry.npmjs.org/react-dom/18.1.0_react@18.1.0
       react-fast-compare: registry.npmjs.org/react-fast-compare/3.2.0
       shallowequal: registry.npmjs.org/shallowequal/1.1.0
-    dev: false
-
-  registry.npmjs.org/react-is/16.13.1:
-    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz}
-    name: react-is
-    version: 16.13.1
     dev: false
 
   registry.npmjs.org/react-merge-refs/1.1.0:
@@ -12002,12 +11998,6 @@ packages:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/regenerate/-/regenerate-1.4.2.tgz}
     name: regenerate
     version: 1.4.2
-    dev: false
-
-  registry.npmjs.org/regenerator-runtime/0.13.11:
-    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz}
-    name: regenerator-runtime
-    version: 0.13.11
     dev: false
 
   registry.npmjs.org/regexp.prototype.flags/1.4.3:
