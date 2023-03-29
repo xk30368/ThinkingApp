@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33c0eb57-76b8-4037-99bc-00b900195df4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/4k_apple_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/5k_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/tou_x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/component/crad/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/component/crad/user.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/nav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/footer/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/footer/index.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,26 +46,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/xiongkang/Desktop/web/ThinkingApp/src/assets/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/xiongkang/Desktop/web/ThinkingApp/node_modules/prettier",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "application.passwordSafe",
-    "ts.external.directory.path": "/Users/xiongkang/Desktop/web/ThinkingApp/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xiongkang/Desktop/web/ThinkingApp/src/assets/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/xiongkang/Desktop/web/ThinkingApp/node_modules/prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/xiongkang/Desktop/web/ThinkingApp/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/img" />
@@ -79,6 +81,7 @@
       <updated>1678121691372</updated>
       <workItem from="1678121692441" duration="21000" />
       <workItem from="1678121943941" duration="592000" />
+      <workItem from="1679904196792" duration="6553000" />
     </task>
     <servers />
   </component>

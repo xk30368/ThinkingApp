@@ -12,6 +12,8 @@
 * 渐变end:
 */
 
+@modeColor: #8abcd1;
+
 /* 自定义主题变量色 */
 @mainColor: #2775b6; // 景泰蓝
 @mainLightColor: #8abcd1; // 秋波蓝
@@ -48,7 +50,87 @@ a:hover {
   min-height: 200vh;
   //background-image: linear-gradient(to right top, #4481eb, #557fef, #647df2, #747bf4, #8378f6, #7b7ffa, #7486fd, #6d8cff, #4d9bff, #2aa8ff, #00b4ff, #04befe);
   //background-image: linear-gradient(118deg, rgba(236, 241, 244,1) 2%,rgba(227, 241, 250,1) 52%);
-  background-image: linear-gradient(to left top, #2775b6, #3c87be, #5499c4, #6eabca, #8abcd1);
+  //background-image: linear-gradient(to left top, #2775b6, #3c87be, #5499c4, #6eabca, #8abcd1);
+  background-color: #4cdc9b;
+  background-image: radial-gradient(closest-side, rgba(39, 117, 182, 1), rgba(39, 117, 182, 0)),
+  radial-gradient(closest-side, rgba(60, 135, 190, 1), rgba(60, 135, 190, 0)),
+  radial-gradient(closest-side, rgba(84, 153, 196, 1), rgba(84, 153, 196, 0)),
+  radial-gradient(closest-side, rgba(110, 171, 202, 1), rgba(110, 171, 202, 0)),
+  radial-gradient(closest-side, rgb(76, 171, 211), rgba(138, 188, 209, 0));
+  background-size: 130vmax 130vmax,
+  80vmax 80vmax,
+  90vmax 90vmax,
+  110vmax 110vmax,
+  90vmax 90vmax;
+  background-position: -80vmax -80vmax,
+  60vmax -30vmax,
+  10vmax 10vmax,
+  -30vmax -10vmax,
+  50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: 10s movement linear infinite;
+}
+
+@keyframes movement {
+  0%, 100% {
+    background-size:
+            130vmax 130vmax,
+            80vmax 80vmax,
+            90vmax 90vmax,
+            110vmax 110vmax,
+            90vmax 90vmax;
+    background-position:
+              -80vmax -80vmax,
+              60vmax -30vmax,
+              10vmax 10vmax,
+              -30vmax -10vmax,
+              50vmax 50vmax;
+  }
+
+  25% {
+    background-size:
+            100vmax 100vmax,
+            90vmax 90vmax,
+            100vmax 100vmax,
+            90vmax 90vmax,
+            60vmax 60vmax;
+    background-position:
+              -60vmax -90vmax,
+              50vmax -40vmax,
+              0vmax -20vmax,
+              -40vmax 20vmax,
+              40vmax 60vmax;
+  }
+
+  50% {
+    background-size:
+            80vmax 80vmax,
+            110vmax 110vmax,
+            80vmax 80vmax,
+            60vmax 60vmax,
+            80vmax 80vmax;
+    background-position:
+              -50vmax -70vmax,
+              40vmax -30vmax,
+              10vmax 0vmax,
+              20vmax 10vmax,
+              30vmax 70vmax;
+  }
+
+  70% {
+    background-size:
+            90vmax 90vmax,
+            90vmax 90vmax,
+            100vmax 100vmax,
+            90vmax 90vmax,
+            70vmax 70vmax;
+    background-position:
+              -50vmax -40vmax,
+              50vmax -30vmax,
+              20vmax 0vmax,
+              -10vmax 10vmax,
+              40vmax 60vmax;
+  }
 }
 
 .ysj-content {
@@ -59,139 +141,17 @@ a:hover {
     width: 100%;
     height: 100vh;
     //background-color: #6eabca;
-    background: url("../assets/img/5k_bg.jpg") no-repeat;
-    background-size: 100% 100%;
+    //background: url("../assets/img/5k_bg.jpg") no-repeat;
+    //background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    .ysj-card {
-      position: relative;
-      width: 400px;
-      height: 190px;
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 35px 80px rgba(0 ,0 ,0 ,0.15);
-      transition: 0.5s;
-      .ysj-card-imgBox {
-        position: absolute;
-        left: 50%;
-        top: -20%;
-        transform: translateX(-50%);
-        width: 150px;
-        height: 150px;
-        background: #fff;
-        border-radius: 50%;
-        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
-        overflow: hidden;
-        transition: 0.5s;
-        img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .ysj-card-content {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        overflow: hidden;
-        .ysj-card-content-details {
-          padding: 20px;
-          text-align: center;
-          width: 100%;
-          transition: 0.5s;
-          transform: translateY(100px);
-          h2 {
-            font-size: 1.25em;
-            font-weight: 600;
-            color: @mainColor;
-            line-height: 1.2em;
-            span {
-              font-size: 0.75em;
-              font-weight: 500;
-              opacity: 0.5;
-            }
-          }
-          .details-data {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 24px;
-            h3 {
-              font-size: 1em;
-              color: @mainColor;
-              line-height: 1.2em;
-              font-weight: 600;
-            }
-          }
-          .details-link {
-            display: flex;
-            justify-content: space-between;
-            li {
-              position: relative;
-              list-style: none;
-              display: block;
-              width: 40px;
-              height: 40px;
-              line-height: 50px;
-              cursor: pointer;
-              border: none;
-              border-radius: 50%;
-              margin: 0 10px;
-              a {
-                //color: @mainLightColor;
-                span svg {
-                  font-weight: bold;
-                  font-size: 1.4em;
-                }
-              }
-            }
-            li::before {
-              position: absolute;
-              content: "";
-              top: 0;
-              left: 0;
-              height: 100%;
-              width: 100%;
-              border-radius: 50%;
-              border: 2px solid @mainColor;
-              z-index: 1;
-              transform: scale(0.9);
-              transition: 0.5s;
-            }
-            li:hover:before{
-              filter: blur(2px);
-              box-shadow: 0 0 14 @mainColor;
-              transform: scale(1.2);
-            }
-          }
-        }
-      }
-    }
-    .ysj-card:hover {
-      height: 300px;
-      .ysj-card-imgBox {
-        width: 200px;
-        height: 200px;
-        border-radius: 20px;
-      }
-      .ysj-card-content {
-        .ysj-card-content-details {
-          transform: translateY(0px);
-        }
-      }
-    }
   }
   .ysj-content-page2 {
     position: relative;
     width: 100%;
     height: 100vh;
     //background-color: #6eabca;
-    background-image: linear-gradient(178.48deg, rgba(32, 80, 60, 1) -1.22%,rgba(145, 217, 164, 1) 88%);
+    //background-image: linear-gradient(178.48deg, rgba(32, 80, 60, 1) -1.22%,rgba(145, 217, 164, 1) 88%);
   }
 }

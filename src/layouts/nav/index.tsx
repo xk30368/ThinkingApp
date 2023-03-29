@@ -12,14 +12,14 @@ const Nav: React.FC = () => {
           <Link to={'/'}>{'主页'}</Link>
         </li>
         <li>
-          <Link to={'#'}>{'博文'}</Link>
+          <Link to={'/audio'}>{'音乐'}</Link>
         </li>
-        <li>
-          <Link to={'#'}>{'个人简历'}</Link>
-        </li>
-        <li>
-          <Link to={'#'}>{'关于我'}</Link>
-        </li>
+        {/*<li>*/}
+        {/*  <Link to={'#'}>{'博文'}</Link>*/}
+        {/*</li>*/}
+        {/*<li>*/}
+        {/*  <Link to={'#'}>{'关于我'}</Link>*/}
+        {/*</li>*/}
       </ul>
     </Header>
 }
