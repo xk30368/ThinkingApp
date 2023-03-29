@@ -2,10 +2,10 @@ import React from 'react'
 
 const Audio: React.FC = () => {
   return (
-    <div>
-      <audio>
-        1
-      </audio>
+    <div className="audio-container">
+      <div className="audio-">
+
+      </div>
     </div>
   )
 }
