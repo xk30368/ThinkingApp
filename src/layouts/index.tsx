@@ -23,7 +23,7 @@ const Layouts: React.FC = () => (
       * */
       // algorithm: theme.defaultAlgorithm,
       token: {
-        colorPrimary: '#2775b6',
+        colorPrimary: '#4cdc9b',
       },
     }}
   >

@@ -1,0 +1,104 @@
+/*
+音乐播放器
+*/
+.audio-container{
+  position: relative;
+  height: 100vh;
+  z-index: 3;
+  margin: 0 6.2%;
+  .audio-player {
+    position: absolute;
+    width: 100%;
+    top: 12.6%;
+    bottom: 16%;
+    min-height: 428px;
+  }
+}
+
+// 音乐主体样式
+.player-normal {
+  margin-right: 440px;
+}
+// 主体工具栏
+.song-list-toolbar {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 1px;
+  button.tool-btn {
+    min-width: 122px;
+    background-color: transparent;
+    border-color: hsla(0, 0%, 100%, .4);
+    opacity: .8;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 6px;
+    font-weight: 500;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: inline-block;
+  }
+  button.tool-btn:hover {
+    color: #fff;
+    border-color: hsla(0 ,0%, 100%, .8);
+    opacity: 1;
+    font-weight: 800;
+  }
+}
+.main-viewport {
+  overflow: hidden;
+  .list-overview {
+    margin-right: 0;
+  }
+}
+
+.list-view {
+  position: relative;
+  font-size: 14px;
+  text-align: left;
+  .list-header {
+    background-color: transparent;
+    color: inherit;
+    margin-bottom: 10px;
+    .list-header-item {
+      position: relative;
+      border-color: hsla(0, 0%, 100%, .4);
+      opacity: .8;
+      color: #fff;
+    }
+    .list-header-check {
+
+    }
+  }
+  .list-song {
+    background-color: transparent;
+    color: inherit;
+    .song-item {
+      position: relative;
+      border-color: hsla(0, 0%, 100%, .4);
+      opacity: .8;
+      color: #fff;
+      .song-middle-height-20 {
+        height: 20px;
+        line-height: 20px;
+      }
+      .song-middle-height-40 {
+        height: 40px;
+        line-height: 40px;
+      }
+      .song-middle-height-60 {
+        height: 60px;
+        line-height: 60px;
+      }
+      .song-middle-height-80 {
+        height: 80px;
+        line-height: 80px;
+      }
+      .song-middle-height-100 {
+        height: 100px;
+        line-height: 100px;
+      }
+    }
+  }
+
+}
