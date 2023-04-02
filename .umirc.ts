@@ -3,6 +3,18 @@ import routes from './src/routes';
 
 export default defineConfig({
   routes,
+  // 开启immer,
+  plugins: [
+    '@umijs/plugins/dist/dva',
+    '@umijs/plugins/dist/initial-state', // 初始化数据
+    '@umijs/plugins/dist/model',  // 配置model
+  ],
+  dva: {
+    // immer: true,
+  },
+  // 配置插件
+  initialState: {},
+  model: {},
   npmClient: 'pnpm',
   // 别名映射
   alias: {
@@ -68,12 +80,4 @@ export default defineConfig({
   },
   // 配置网页title
   //title: '云思绝',
-
-  // 配置插件
-  plugins: [
-    '@umijs/plugins/dist/initial-state', // 初始化数据
-    '@umijs/plugins/dist/model',  // 配置model
-  ],
-  initialState: {},
-  model: {},
 });

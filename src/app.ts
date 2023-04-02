@@ -1,1 +1,9 @@
-console.log('1111')
+// import  { defineApp } from 'umi';
+//
+// export default defineApp({
+//   layout: () => {
+//     return {
+//       title: 'ysj-i'
+//     }
+//   }
+// })

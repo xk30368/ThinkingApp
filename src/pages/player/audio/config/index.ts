@@ -1,32 +1,5 @@
 /**
  * @author ysj
- * @description 定义歌曲对象接口
- * @param sid 歌曲主键 唯一值
- * @param songTitle 歌名
- * @param singer 歌手
- * @param album 专辑
- * @param cover 歌曲封面
- * @param comments 评论数
- * @param likes 喜欢数量
- * @param collections 收藏数
- * @param downloads 下载数
- * @param time 时长
- * */
-interface songAttr {
-  readonly sid: number,
-  songTitle: string,
-  singer: any,
-  album: string,
-  cover: string,
-  comments: number,
-  like: boolean,
-  collections: number,
-  downloads: number,
-  time: any,
-}
-
-/**
- * @author ysj
  * @description 歌曲列表工具栏
  * @enum collection,add,download,delete,clear
  * */
@@ -70,4 +43,4 @@ const SONG_BUTTON: Array<string> = ['收藏','添加到','下载','删除','清�
 const SONG_TABLE_HEADER: Array<string> = ['歌曲','歌手','时长'];
 
 
-export { songAttr, songToolbarBtn, SONG_BUTTON, SONG_TABLE_HEADER, songList };
+export { songToolbarBtn, SONG_BUTTON, SONG_TABLE_HEADER, songList };
