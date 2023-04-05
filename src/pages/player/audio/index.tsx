@@ -7,6 +7,7 @@ import { HeartOutlined, PlusOutlined, DownloadOutlined, DeleteOutlined, ClearOut
 import './index.less';
 import * as config from './config';
 import Cover from './cover';
+import FtPlayer from '@/pages/player/audio/ft_player';
 
 const MiddleBox:React.FC<{ children: React.ReactNode; height: number }> = (props) => (
   <div className={`song-middle-height-${props.height}`}>{props.children}</div>
@@ -37,7 +38,7 @@ const Audio: React.FC = () => {
     let flex: any = 2;
     switch (type) {
       case '歌曲':
-        flex = '68%';
+        flex = '60%';
         break;
       case '歌手':
         flex = '20%';
@@ -79,7 +80,7 @@ const Audio: React.FC = () => {
                   <Col flex={'80px'} className="song-item song-item-check">
                     <MiddleBox height={40}><Checkbox className="song-item-check"></Checkbox></MiddleBox>
                   </Col>
-                  <Col flex={'68%'} className="song-item song-item-name"><MiddleBox height={40}>{item.songTitle}</MiddleBox></Col>
+                  <Col flex={'60%'} className="song-item song-item-name"><MiddleBox height={40}>{item.songTitle}</MiddleBox></Col>
                   <Col flex={'20%'} className="song-item song-item-singer"><MiddleBox height={40}>{item.singer && item.singer.join('/')}</MiddleBox></Col>
                   <Col flex={'auto'} className="song-item song-item-time"><MiddleBox height={40}>{item.time}</MiddleBox></Col>
                 </Row>)}
@@ -89,6 +90,7 @@ const Audio: React.FC = () => {
           <Cover songData={songData} />
         </div>
       </div>
+      <FtPlayer songData={songData} />
     </div>
   )
 }

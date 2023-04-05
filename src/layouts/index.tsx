@@ -1,15 +1,9 @@
 import React, { useEffect } from 'react';
-import { Outlet, useModel } from 'umi';
+import { Outlet } from 'umi';
 import { Layout, ConfigProvider } from 'antd';
 import Nav from './nav';
 
-const { Content, Footer } = Layout;
-
-interface IData {
-  initialState: any,
-  loading: boolean,
-  refresh: void,
-}
+const { Content } = Layout;
 
 const Layouts: React.FC = () => {
   // const { initialState } = useModel('@@initialState');

@@ -7,12 +7,16 @@ const Cover: React.FC<{ songData: ISongAttr }> = (props) => {
   return (
     <div className="song-info">
       <div className="song-info-head">
-        <a className="song-info-head-cover"><img alt={songTitle} src={cover || ''} /></a>
-        <div className="song-info-head-title">{songTitle}</div>
-        <div className="song-info-head-singer">{singer.join(' / ')}</div>
-        <div className="song-info-head-album">{album}</div>
+        <a className="song-info-head-cover"><img className="song-info-pic" alt={songTitle} src={cover || ''} /></a>
+        <div className="song-info-head-title song-info-view">{songTitle}</div>
+        <div className="song-info-head-singer song-info-view">{singer.join(' / ')}</div>
+        <div className="song-info-head-album song-info-view">{album}</div>
       </div>
-      <div className="song-info-lyric"></div>
+      <div className="song-info-lyric">
+        <div className="song-info-lyric-box">
+          <p>歌词功能开发中...</p>
+        </div>
+      </div>
     </div>
   )
 }
